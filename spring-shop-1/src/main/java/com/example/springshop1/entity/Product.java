@@ -3,9 +3,7 @@ package com.example.springshop1.entity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.List;
 import java.util.UUID;
 
@@ -20,10 +18,6 @@ public class Product {
     @Column(name = "count")
     private int count;
 
-    //@Repository
-    //public interface Repo extends CrudRepository<Product, UUID> {
-    //    List<Product> findAll();
-    //}
 
     public UUID getId() {
         return id;
